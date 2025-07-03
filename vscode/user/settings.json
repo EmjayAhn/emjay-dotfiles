@@ -1,0 +1,141 @@
+{
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "h": true,
+        "j": true,
+        "k": true,
+        "l": true
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "vscode-icons",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.fontFamily": "'Fira Code', Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "python.languageServer": "Pylance",
+    "llm.configTemplate": "WizardLM/WizardCoder-Python-34B-V1.0",
+    "llm.modelIdOrEndpoint": "http://10.130.198.12:9002/generate",
+    "llm.fillInTheMiddle.enabled": true,
+    "llm.fillInTheMiddle.prefix": "<PRE> ",
+    "llm.fillInTheMiddle.middle": " <MID>",
+    "llm.fillInTheMiddle.suffix": " <SUF>",
+    "llm.temperature": 0.2,
+    "llm.contextWindow": 4096,
+    "llm.tokensToClear": [
+        "<EOT>"
+    ],
+    "llm.tokenizer": {
+        "repository": "WizardLM/WizardCoder-Python-34B-V1.0"
+    },
+    "highlight.regexes": {
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#ffcc00",
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#cc0000",
+                    "backgroundColor": "#cc0000",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#cc0000",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#00ccff",
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#cc00cc",
+                    "backgroundColor": "#cc00cc",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#cc00cc",
+                    "color": "#1f1f1f"
+                }
+            ]
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "foreground": "#f06292"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.docstring.multi.python",
+                    "string.quoted.double.block.python",
+                    "string.quoted.single.block.python"
+                ],
+                "settings": {
+                    "foreground": "#f06292"
+                }
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#4169E1",
+        "editor.selectionHighlightBackground": "#4169E1"
+    },
+    "database-client.autoSync": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "sync.gist": "84dd8566dff06645ce7037ff57c4b0d8",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "notebook.output.wordWrap": true,
+    "workbench.colorTheme": "GitHub Dark High Contrast",
+    "keyboard.dispatch": "keyCode",
+    "cursor.cpp.enablePartialAccepts": true,
+    "git.autofetch": true,
+}
